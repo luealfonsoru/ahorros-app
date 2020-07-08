@@ -1,6 +1,6 @@
 # Ahorros App
-## Proyecto pesentado en el marco del proceso de selección
-## Desarrollador Front en 
+### Proyecto pesentado en el marco del proceso de selección
+### Desarrollador Front End
 
 ### Requisitos
 
