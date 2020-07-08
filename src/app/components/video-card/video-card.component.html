@@ -1,0 +1,13 @@
+<div class="card white-card video-card responsive-card">
+  <a [href]="videos.posts[currentVideoIndex].src" target="_blank">
+    <img [src]="videos.posts[currentVideoIndex].thumbnail" class="thumbnail">
+    <img src="../../assets/icon/play.svg" class="play-button">
+  </a>
+  <img src="../../assets/images/waves.svg" class="info-container">
+  <div class="title">
+    {{videos.posts[currentVideoIndex].title}}
+  </div>
+  <div class="subtitle">
+    {{videos.posts[currentVideoIndex].subtitle}}
+  </div>
+</div>

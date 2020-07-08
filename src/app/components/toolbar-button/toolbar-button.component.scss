@@ -1,0 +1,36 @@
+.toolbar-button-text{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.button-image{
+    height: 25px;
+    img {
+        vertical-align: middle !important;
+        max-height: 25px;
+    }
+    .center-vertical {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+ion-tabs{
+	ion-tab-bar {
+		ion-tab-button {
+            --background:  white !important;
+            width: 22.5%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 100%;
+            z-index: 100;
+        }
+	}
+}

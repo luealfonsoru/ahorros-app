@@ -1,0 +1,8 @@
+<ion-toolbar [ngClass]="isHalf ? 'semi' : ''">
+  <ion-title>{{title}}</ion-title>
+  <ion-buttons slot="primary">
+    <ion-button fill="none" *ngIf="icon">
+      <img [src]="icon">
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>

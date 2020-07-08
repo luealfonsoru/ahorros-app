@@ -1,0 +1,89 @@
+<ion-header class="ion-no-border">
+  <app-header [title]="'Hola, ' + userData.name" icon="../../../assets/icon/bell.svg"></app-header>
+</ion-header>
+<ion-content>
+
+  <ion-grid class="ion-no-padding">
+
+
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding">
+        <app-main-card [userData]="userData"></app-main-card>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <app-incomes-card [userData]="userData"></app-incomes-card>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding responsive-card">
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <app-header class="section-title" title="Tus metas" icon="../../../assets/icon/add-circle.svg"
+              isHalf="true">
+            </app-header>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-no-padding" class="goals-cards responsive-card">
+          <app-goals-slider [userData]="userData"></app-goals-slider>
+        </ion-row>
+      </ion-col>
+      <ion-col class="ion-no-padding responsive-card">
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <app-header class="section-title" title="Conoce tu portafolio" isHalf="true"
+              icon="../../../assets/icon/st-badge.svg">
+            </app-header>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <app-portfolio-card [userData]="userData" [currentPortfolioIndex]="currentPortfolioIndex"></app-portfolio-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding responsive-card">
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <app-header class="section-title" title="Los P*t@s del ahorro">
+            </app-header>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <app-video-card [videos]="videos" [currentVideoIndex]="currentVideoIndex"></app-video-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="ion-no-padding responsive-card">
+        <ion-row>
+          <ion-col>
+            <div class="pagination">
+              <table>
+                <tr>
+                  <td *ngFor="let page of videos.posts" (click)="changePage(page.page)">
+                    <div [ngClass]="page.page === currentVideoIndex ? 'page selected' : 'page unselected' "></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <app-blog-card></app-blog-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+</ion-content>

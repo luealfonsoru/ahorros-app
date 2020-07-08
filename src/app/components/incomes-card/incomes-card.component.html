@@ -1,0 +1,12 @@
+<div class="card white-card incomes-card responsive-card">
+  <table>
+    <tr>
+      <td class="left-column">Inversión</td>
+      <td class="right-column">{{userData.investments | currency:'COP':'symbol':'1.0-0':'es-Co'}}</td>
+    </tr>
+    <tr>
+      <td class="left-column">Rendimiento</td>
+      <td class="right-column">{{userData.incomes | currency:'COP':'symbol':'1.0-0':'es-Co'}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+<ion-slides [options]="slideOptions">
+  <ion-slide *ngFor="let goal of userData.goals" style="width: 158px; margin-left:11px">
+    <ion-col>
+      <div class="card white-card goal-card">
+        <img [src]="goal.icon">
+        <div class="title">
+          {{goal.title}}
+        </div>
+        <div class="percent">
+          {{goal.percentage}}%
+        </div>
+        <div class="subtitle">
+          {{goal.current | currency:'COP':'symbol':'1.0-0':'es-Co'}}
+        </div>
+        <div class="goal-subtitle">
+          {{goal.goal | currency:'COP':'symbol':'1.0-0':'es-Co'}}
+        </div>
+      </div>
+    </ion-col>
+  </ion-slide>
+</ion-slides>

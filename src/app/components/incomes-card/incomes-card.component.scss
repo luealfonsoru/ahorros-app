@@ -1,0 +1,34 @@
+.incomes-card{
+    position: relative;
+    padding: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #58506B;
+
+    height: 102px;
+    .right-column{
+        font-style: normal;
+        text-align: right;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        @media only screen and (orientation: portrait){
+            width: calc(100vw - 48px); 
+        }
+        @media only screen and (orientation: landscape){
+            width: calc(50vw - 60px); 
+        }
+    }
+    .left-column{
+        font-style: semibold;
+        font-weight: normal;
+        @media only screen and (orientation: portrait){
+            width: calc(100vw - 48px); 
+        }
+        @media only screen and (orientation: landscape){
+            width: calc(50vw - 60px); 
+        }
+    }
+    td{
+        padding-bottom: 20px;
+    }
+}

@@ -1,1 +1,53 @@
+.toolbar-button-text{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
 
+.add-text{
+    margin-left: 0px;
+}
+
+.plus-button-text{
+    margin-top: 10px;
+}
+
+.not-selected{
+    color: #A99DC6
+}
+
+.center-button{
+    visibility: hidden;
+}
+
+ion-tabs{
+	ion-fab {
+        margin-bottom: 40px;
+        text-align: center;
+        width: 54px;
+        --box-shadow: none !important;
+		ion-fab-button {
+            --box-shadow: none !important;
+            --border-color: #F8F8FC;
+            --border-style: solid;
+            --border-width: 4px;
+		}
+	}
+	ion-tab-bar {
+        --border: 0;
+        border-radius: 16px !important;
+        height: 60px;
+		--background: white;
+		position: absolute;
+		bottom: 40px;
+        left:50%;
+        transform: translate(-50%,0);
+        width: 90%;
+        max-width: 500px;
+	}
+}

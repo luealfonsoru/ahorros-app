@@ -1,0 +1,37 @@
+ion-content{
+    --padding-start: 24px;
+    --padding-end: 24px;
+    --padding-bottom: 150px;
+}
+
+
+.section-title{
+    position: absolute;
+    min-width: 100vw;
+    margin-left: -24px;
+}
+
+.pagination{
+    position: relative;
+    width: 100%;
+    td{
+        padding: 8px;
+        .page{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+        }
+        .selected{
+            background: linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
+            background-blend-mode: multiply, normal;
+        }
+        .unselected{
+            background: #D7C7FF;
+        }
+    }
+}
+
+.goals-cards{
+    position:relative;
+    margin-top: 64px;
+}

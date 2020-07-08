@@ -1,0 +1,39 @@
+.main-card{
+    position: relative;
+    height: 230px;
+    margin-top: 48px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: white;
+    .person-image{
+        margin-left: calc(100% - 170px);
+        width: 60%;
+        margin-top: -24px;
+        max-width: 170px;
+    }
+    .text{
+        position: absolute;
+        top: 0px;
+    }
+    .subtitle{
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 18px;
+        line-height: 25px;
+        width: 45%;
+    }
+    
+    .title-label{
+        margin-top: 140px;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .title{
+        margin-top: 161px;
+        margin-left: 20px;
+        font-size: 36px;
+        line-height: 49px;
+    }
+}

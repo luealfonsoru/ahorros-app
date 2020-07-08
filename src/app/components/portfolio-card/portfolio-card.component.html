@@ -1,0 +1,49 @@
+<div class="card white-card portfolio-card responsive-card">
+  <ion-row>
+    <ion-col>
+      <div class="percentage-subtitle">
+        RoboAdvisor
+      </div>
+      <div class="percentage-title">
+        {{userData.portfolio.servicesCount}} Fondos
+      </div>
+      <img src="../../assets/icon/robot.svg" class="percent-icon">
+      <img src="../../assets/icon/portfolio-loader.svg"
+        [ngStyle]="{ 'transform' : 'rotate( ' + portfolioLoaderRotation + 'deg )' }" class="percent-loader">
+    </ion-col>
+    <ion-col>
+      <img [src]="userData.portfolio.services[currentPortfolioIndex].logo" class="portfolio-logo">
+      <div class="portfolio-badge">
+        {{userData.portfolio.services[currentPortfolioIndex].percentage}}%
+      </div>
+      <div class="title">
+        {{userData.portfolio.services[currentPortfolioIndex].title}}
+      </div>
+      <div class="amount">
+        {{userData.portfolio.services[currentPortfolioIndex].amount | currency:'COP':'symbol':'1.0-0':'es-Co'}}
+      </div>
+      <div class="subtitle">
+        Tipo de activo
+      </div>
+      <div class="assets">
+        <div *ngFor="let asset of userData.portfolio.services[currentPortfolioIndex].assets">
+          {{asset}}
+        </div>
+      </div>
+      <ion-button fill="none" [disabled]="currentPortfolioIndex === 0" (click)="changeAsset(-1)"
+        class="back-button">
+        <img src="../../assets/icon/left.svg">
+      </ion-button>
+      <ion-button fill="none" [disabled]="currentPortfolioIndex === (userData.portfolio.servicesCount - 1)"
+        (click)="changeAsset(1)" class="forward-button">
+        <img src="../../assets/icon/right.svg">
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="portfolio-description">
+      Tu dinero se invierte de la forma más eficiente de acuerdo al perfil de riesgo asignado por nuestro
+      RoboAdvisor.
+    </ion-col>
+  </ion-row>
+</div>

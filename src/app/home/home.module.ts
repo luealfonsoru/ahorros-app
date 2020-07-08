@@ -1,21 +1,22 @@
-import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
+import { IonicModule } from '@ionic/angular';
 
-import { TabsPage } from './tabs.page';
+import { HomePageRoutingModule } from './home-routing.module';
+
+import { HomePage } from './home.page';
 import { ComponentsModule } from '../components.module';
 
 @NgModule({
   imports: [
-    IonicModule,
     CommonModule,
     FormsModule,
+    IonicModule,
     ComponentsModule,
-    TabsPageRoutingModule
+    HomePageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [HomePage]
 })
-export class TabsPageModule {}
+export class HomePageModule { }
