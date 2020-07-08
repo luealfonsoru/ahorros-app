@@ -22,7 +22,6 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.userData = this.userService.getUserData()
     this.videos = this.blogService.getVideoPosts()
-    this.blog = this.blogService.getBlogPosts()
   }
 
 }
